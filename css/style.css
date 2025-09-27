@@ -2,27 +2,25 @@
 :root {
     --primary-color: #ff6600;
     --primary-color-hover: #e05500;
-    --text-light: #ffffff;
-    --text-light-secondary: #F6F6F6;
-    --text-dark: #1E1E1E;
-    --text-grey: #555;
+    --text-color: #252b42; 
+    --text-second-color: #737373; 
+    --color-white: #ffffff;
+    --hero-text-color: #F6F6F6;
+    --text-copyright-color: #5C5C5C;
     --font-primary: 'Poppins', sans-serif;
     --font-secondary: 'Montserrat', sans-serif;
 }
 
 /* General Styles */
 body {
-    margin: 0;
     font-family: var(--font-secondary);
-    color: var(--text-dark);
+    color: var(--text-second-color); 
 }
 
 .container {
-    max-width: 1100px;
-    width: 100%;
+    max-width: 1440px; 
     margin: 0 auto;
     padding: 0 15px;
-    box-sizing: border-box;
 }
 
 .section-title {
@@ -31,11 +29,12 @@ body {
     text-align: center;
     margin-bottom: 70px;
     font-family: var(--font-primary);
+    color: var(--text-color);
 }
 
 /* Header */
 .header {
-    padding: 20px 0;
+    padding: 45px 0;
 }
 
 .header .container {
@@ -45,20 +44,18 @@ body {
 }
 
 .logo-img {
-    height: 50px;
+    width: 150px;
+    height: 65px;
 }
 
 .header-list {
-    list-style: none;
     display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+    gap: 94px; 
 }
 
 .header-link {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--text-color);
     font-size: 18px;
     padding: 10px;
     transition: color 0.3s ease;
@@ -75,7 +72,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 120px 0;
+    padding: 120px 0; 
     background: url('../img/picbg.jpg') no-repeat center/cover;
 }
 
@@ -88,13 +85,13 @@ body {
 .hero-subtitle {
     font-size: 20px;
     margin-bottom: 10px;
-    color: var(--text-light-secondary);
+    color: var(--hero-text-color);
 }
 
 .hero-title {
     font-size: 48px;
     font-weight: bold;
-    color: var(--text-light);
+    color: var(--color-white);
     margin-bottom: 10px;
     font-family: var(--font-primary);
     max-width: 600px;
@@ -104,34 +101,31 @@ body {
 .hero-discr {
     font-size: 18px;
     margin-bottom: 30px;
-    color: var(--text-light-secondary);
+    color: var(--hero-text-color);
 }
 
 .hero-buttons {
     display: flex;
-    gap: 20px;
+    gap: 67px; 
 }
 
 /* App Section */
 .app {
-    padding: 100px 0;
+    padding: 56px 0; 
     text-align: center;
 }
 
 .app-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 108px; 
 }
 
 .app-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 250px; 
     text-align: left;
 }
 
@@ -159,14 +153,14 @@ body {
 .app-heading {
     font-size: 28px;
     font-weight: bold;
-    color: var(--text-dark);
+    color: var(--text-color);
     margin-bottom: 15px;
     font-family: var(--font-primary);
 }
 
 .app-discr {
     font-size: 18px;
-    color: var(--text-grey);
+    color: var(--text-second-color);
     line-height: 1.6;
 }
 
@@ -177,7 +171,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 0; 
     background: url('../img/picbgtwo.jpg') no-repeat center/cover;
 }
 
@@ -190,21 +184,21 @@ body {
 .download-title {
     font-size: 36px;
     margin-bottom: 10px;
-    color: var(--text-light);
+    color: var(--color-white);
     font-family: var(--font-primary);
 }
 
 .download-disc {
     font-size: 1.2em;
     margin-bottom: 30px;
-    color: var(--text-light);
+    color: var(--color-white);
     max-width: 500px;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 16px; 
 }
 
 /* Buttons */
@@ -220,7 +214,7 @@ body {
 
 .hero-button {
     background-color: var(--primary-color);
-    color: var(--text-light);
+    color: var(--color-white);
 }
 
 .hero-button:hover {
@@ -229,18 +223,18 @@ body {
 
 .second-hero-button {
     background-color: transparent;
-    color: var(--text-light);
-    border: 2px solid var(--text-light);
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
 }
 
 .second-hero-button:hover {
-    background-color: var(--text-light);
+    background-color: var(--color-white);
     color: var(--primary-color);
 }
 
 /* Footer */
 .footer {
-    padding: 50px 0;
+    padding: 78px 0; 
 }
 
 .footer .container {
@@ -254,8 +248,5 @@ body {
 }
 
 .footer-disc {
-    color: var(--text-grey);
+    color: var(--text-copyright-color);
 }
-
-
-
